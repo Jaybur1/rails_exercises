@@ -10,5 +10,5 @@ end
 secret_num = generate_rand_num(101)
 
 get '/' do 
-  "The secret number is #{secret_num}"  
+  erb :index, locals: {secret_num: secret_num}
 end
