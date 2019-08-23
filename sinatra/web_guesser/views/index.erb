@@ -1,9 +1,22 @@
 <html>
   <head>
     <title>web_guesser</title>
+    <style>
+      .red {
+        background: red;
+      }
+
+      .green {
+        background: green;
+      }
+
+      .lightred {
+        background: lightcoral
+      }
+    </style>
   </head>
-  <body>
-    <h1>The secret number is <%= secret_num %></h1>
+  <body class=<%= background %>>
+    <h1>The secret number is </h1>
     <p>TRY A GUESS</p>
     <form>
       <input type="text" name="guess"/>
